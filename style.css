@@ -1,3 +1,10 @@
+.heading h1{
+    background-color: rgb(0, 110, 255);
+    margin: 0;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.952);
+}
+
 .input-div{
     display: flex;
 }
@@ -13,15 +20,15 @@
     height:50px;
     border: none;
     outline: none;
-    background-color: blue;
+    background-color: rgba(115, 192, 243, 0.76);
     padding: 0 10px;
     font-size: 20px;
-    color: white;
+    color: black;
     /* margin-right: 10px; */
 }
-.input input::placeholder{
+/* .input input::placeholder{
     color: rgb(207, 207, 207);
-}
+} */
 .btn{
     flex: 2;
     /* width: 20%; */
@@ -35,12 +42,17 @@
     border: none;
     outline: none;
     cursor: pointer;
+    background-color: rgba(115, 192, 243, 0.76);
+    text-align: center;
+}
+.btn button:hover{
+    background-color:rgb(0, 110, 255)
 }
 .btn button>img{
     width: 20px;
 }
 .items{
-    background-color: rgb(0, 183, 255);
+    /* background-color: rgb(0, 183, 255); */
     /* padding:20px 0 10px 0; */
 }
 .items ul{
@@ -49,23 +61,32 @@
     
 }
 .items ul li{
-    padding: 10px 0 0 0;
-    margin: 0;
-   
+    /* padding: 10px 0 ; */
+  
+  
     display: flex;
-    list-style-type: square;
+    background-color: rgb(0, 183, 255); 
+    
 }
 
+.items ul li:nth-child(odd){
+    background-color: rgba(0, 183, 255, 0.767); 
+}
 .btndiv{
-  /* width: 10%; */
+ 
   flex: 1;
 display: flex;
+padding:5px 0 ;
 }
 .btndiv>button{
    flex: 1;
-   
+   border: none;
+    outline: none;
+    cursor: pointer;
     height: 30px;
+    background-color: transparent;
 }
+
 .btndiv>button>img{
     width: 20px;
     height: 20px;
@@ -91,7 +112,19 @@ background-color: transparent;
      flex: 9;
    word-wrap: break-word;
      text-align: justify;
-     font-size: 16px;
-     padding: 0 10px;
+     font-size: 20px;
+     padding: 10px 10px;
      
+ }
+
+ .hidden{
+     display: none;
+ }
+
+
+ @media only screen and (max-width:480px){
+    .textdiv{
+        font-size: 16px;}
+        .input input{
+            font-size: 16px;}
  }

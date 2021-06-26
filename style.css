@@ -10,9 +10,7 @@
 }
 
 .input{
-    flex: 9;
-    /* width: 80%; */
-    /* background-color: blue; */
+    flex: 10;
     height: 50px;
 }
 .input input{
@@ -22,39 +20,37 @@
     outline: none;
     background-color: rgba(115, 192, 243, 0.76);
     padding: 0 10px;
-    font-size: 18px;
+    font-size: 16px;
     color: black;
-    /* margin-right: 10px; */
+    
 }
-/* .input input::placeholder{
-    color: rgb(207, 207, 207);
-} */
+
 .btn{
     flex: 2;
-    /* width: 20%; */
-    /* background-color: red; */
     height: 50px;
     display: flex;
 }
+
 .btn button{
     height: 50px;
-    width: 50%;
+    /* width: 50%; */
+    flex: auto;
     border: none;
     outline: none;
     cursor: pointer;
     background-color: rgba(115, 192, 243, 0.76);
     text-align: center;
+    font-size: 16px;
 }
+
 .btn button:hover{
     background-color:rgb(0, 110, 255)
 }
-.btn button>img{
+/* .btn button>img{
     width: 20px;
-}
-.items{
-    /* background-color: rgb(0, 183, 255); */
-    /* padding:20px 0 10px 0; */
-}
+    
+} */
+
 .items ul{
     margin: 0;
     padding: 0;
@@ -84,6 +80,7 @@ padding-left:10px;
     outline: none;
 background-color: transparent;
 font-size: 16px;
+color: black;
 }
 /* .listInput:hover{
     border-bottom: 2px solid red;
@@ -107,6 +104,7 @@ padding:5px 0 ;
 img{
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 
 /* .items ul li> textarea{
@@ -140,8 +138,10 @@ background-color: transparent;
 
 
  @media only screen and (max-width:480px){
-    /* .textdiv{
-        font-size: 16px;} */
+    
         .input input{
             font-size: 16px;}
+
+            .heading h1{font-size: 28px;}
+            .btn button{font-size: 14px;}
  }

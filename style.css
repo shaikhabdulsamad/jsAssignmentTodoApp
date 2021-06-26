@@ -22,7 +22,7 @@
     outline: none;
     background-color: rgba(115, 192, 243, 0.76);
     padding: 0 10px;
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     /* margin-right: 10px; */
 }
@@ -61,7 +61,7 @@
     
 }
 .items ul li{
-    /* padding: 10px 0 ; */
+    padding: 10px 10px ;
   
   
     display: flex;
@@ -72,22 +72,39 @@
 .items ul li:nth-child(odd){
     background-color: rgba(0, 183, 255, 0.767); 
 }
-.btndiv{
+
+.items ul li span{
+   display: block;
+padding-left:10px;
+}
+
+.listInput{
+    width:100%;
+    border: none;
+    outline: none;
+background-color: transparent;
+font-size: 16px;
+}
+/* .listInput:hover{
+    border-bottom: 2px solid red;
+} */
+
+/* .btndiv{
  
   flex: 1;
 display: flex;
 padding:5px 0 ;
-}
-.btndiv>button{
+} */
+/* .btndiv>button{
    flex: 1;
    border: none;
     outline: none;
     cursor: pointer;
     height: 30px;
     background-color: transparent;
-}
+} */
 
-.btndiv>button>img{
+img{
     width: 20px;
     height: 20px;
 }
@@ -104,27 +121,27 @@ background-color: transparent;
       height: auto;
      
  } */ 
-.textdiv{
-/* border: none;
-outline: none; */
+/* .textdiv{
+border: none;
+outline: none;
 background-color: transparent;
-     /* width: 70%; */
+     width: 70%;
      flex: 9;
    word-wrap: break-word;
      text-align: justify;
      font-size: 20px;
      padding: 10px 10px;
      
- }
+ } */
 
- .hidden{
+ /* .hidden{
      display: none;
- }
+ } */
 
 
  @media only screen and (max-width:480px){
-    .textdiv{
-        font-size: 16px;}
+    /* .textdiv{
+        font-size: 16px;} */
         .input input{
             font-size: 16px;}
  }

@@ -1,5 +1,4 @@
-
-function addList(){
+ function addList(){
     var input = document.getElementById('input')
    var ul = document.getElementById('ul')
    var li = document.createElement('li');
@@ -27,9 +26,17 @@ function addList(){
     li.appendChild(span1)
     li.appendChild(span2)
 
-    
+    if(input.value === ""){
+        alert("Nothing to add")
+    }
+    else if(input.value === " "){
+        alert("Nothing to add")
+    }
+    else{
 
-ul.appendChild(li)
+        ul.appendChild(li)
+    }
+
 
 input.value = ""
 

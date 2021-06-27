@@ -28,7 +28,7 @@
     padding: 0 10px;
     font-size: 16px;
     color: black;
-    
+    text-overflow: ellipsis;
 }
 
 .btn{
@@ -87,6 +87,7 @@ padding-left:10px;
 background-color: transparent;
 font-size: 16px;
 color: black;
+text-overflow: ellipsis;
 }
 /* .listInput:hover{
     border-bottom: 2px solid red;
